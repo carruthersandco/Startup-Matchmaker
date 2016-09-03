@@ -1,0 +1,276 @@
+/*
+advanced CSS layouts
+Aimee Carruthers
+*/
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+#header {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+  min-height: 80px;
+  background-color: #000000;
+  margin: 0px;
+  border-radius: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-bottom: 3px solid #f8ff00;
+}
+
+#header .logo {
+  display:flex;
+  flex-direction: row;
+  align-items: bottom;
+  margin-top: 20px;
+  background-color: transparent;
+}
+
+#header .nav {
+  display:flex;
+  flex-direction: row;
+  align-items: baseline;
+  background-color: transparent;
+}
+
+#hero .strap {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 50px;
+  background-color: #c6c6c6;
+  margin: 0px;
+  border-radius: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#hero .hero-image {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 450px;
+  padding-right: 10%;
+  margin: 0px;
+  border-radius: 0px;
+  background: url(../images/coworking.jpg) no-repeat center top;
+  background-size: 100%;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+.overlay {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 300px;
+  max-width: 30%;
+  background-color: rgba(255, 255, 255, 0.8);;
+  margin: 0px;
+  border-radius: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-text {
+  background-color: transparent;
+}
+
+.button {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 30px;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.primary {
+  background-color: #f8ff00;
+  box-shadow: 0px 2px 0px 0px rgba(204, 206, 0, 0.3);
+}
+
+.primary:hover {
+  background-color: #c6c6c6;
+  box-shadow: 0px 2px 0px 0px rgba(106, 106, 106, 0.8);
+  cursor: pointer;
+}
+
+.secondary {
+  background-color: #c6c6c6;
+  box-shadow: 0px 2px 0px 0px rgba(106, 106, 106, 0.8);
+}
+
+.secondary:hover {
+  background-color: #f8ff00;
+  box-shadow: 0px 2px 0px 0px rgba(204, 206, 0, 0.3);
+  cursor: pointer;
+}
+
+#content {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top:25px;
+  padding-bottom:25px;
+  padding-right: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.divider {
+  height: inherit;
+  width: 1px;
+  border-right: 1px solid #888;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.content-box {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 300px;
+  background-color: transparent;
+  margin: 0px;
+  border-radius: 0px;
+}
+
+#footer {
+  min-height: 60px;
+  background-color: #000000;
+  padding-left: 10%;
+  padding-right: 10%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/******************************************
+/* TYPE
+/*******************************************/
+
+#header h1 {
+  color: #f8ff00;
+  font-size: 28px;
+  line-height: 1.4;
+  font-family: 'Merriweather', serif;
+  font-weight: 800;
+}
+
+.nav a {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #f8ff00;
+}
+
+.nav a.big {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1.4;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+
+.nav a.big:hover {
+  color: #f8ff00;
+}
+
+#hero h2 {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: 'Merriweather', serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.strap .taste {
+  color: #888888;
+  text-decoration: line-through;
+}
+
+.strap .are {
+  border-bottom: 2px solid #f8ff00;
+    margin-bottom:5px;
+}
+
+h3 {
+  color: #000000;
+  font-size: 22px;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  color: #000000;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 1em;
+  font-family: 'Merriweather', serif;
+  font-weight: 800;
+}
+
+p {
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+.button span {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#footer p {
+  color: #ffffff;
+}
